@@ -5,7 +5,9 @@
     "pages/logs/logs",
     "pages/join/join",
     "pages/task/task",
-    "pages/question/question"
+    "pages/question/question",
+    "pages/invite/invite",
+    "pages/validate/validate"
   ],
   "window": {
     "backgroundTextStyle": "light",

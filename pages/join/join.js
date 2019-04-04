@@ -39,7 +39,8 @@ Page({
    
     return {
       title: '短视频下载工具',
-      path: 'pages/join/join',
+      path: '/pages/start/start', //分享地址
+      imageUrl: '/images/invite_bg_1.png', //分享图片
       success: function (res) {
         
         // 转发成功

@@ -78,5 +78,22 @@ function checkUrl(urlString) {
   }
   return false;
 }
+
+function returnShare(callback, failcall){
+  return {
+    title: '短视频下载工具', //分享内容
+    path: '/pages/start/start', //分享地址
+    imageUrl: '/images/invite_bg_1.png', //分享图片
+    success: function (res) {
+      
+      if (failcall) {
+        failcall(res.data);
+      } 
+
+    }
+  }
+}
+
 module.exports.ajax = ajax
 module.exports.checkUrl = checkUrl
+module.exports.returnShare = returnShare

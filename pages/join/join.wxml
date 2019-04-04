@@ -39,7 +39,7 @@
 
         <view class="weui-cell__bd hd_text" >常见问题</view>
 
-        <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
 
       </navigator>
 
@@ -53,7 +53,7 @@
 
         <view class="weui-cell__bd hd_text">意见反馈</view>
 
-        <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
 
       </navigator>
 
@@ -68,7 +68,8 @@
 
         <view class="weui-cell__bd hd_text">快乐分享</view>
 
-        <view class="weui-cell__ft weui-cell__ft_in-access">次数+5
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          做任务获取去水印次数
         </view>
 
       </navigator>

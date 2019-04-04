@@ -1,0 +1,46 @@
+<!--pages/invite/invite.wxml-->
+<view class='pg'>
+  <view class='pg-head'>
+    <image mode="widthFix" src='/images/invite_bg_1.png'></image>
+  </view>
+
+  <view class='pg-bd'>
+    <view class='content'>
+      <view class='content-top'>
+        <icon type="success" size='18' color="yellow" />
+        <text>第一步：复制邀请码</text>
+      </view>
+      <view class='content-bottom'>
+        <text class='content-bottom-left'>我的邀请码：{{inviteCode}}</text>
+        <view class='content-bottom-right'>
+          <button class='content-btn' bindtap='setClipboardData'>复制邀请码</button>
+        </view>
+      </view>
+    </view>
+
+    <view class='content'>
+      <view class='content-top'>
+        <icon type="success" size='15' color="yellow" />
+        <text>第二步：一键分享工具</text>
+      </view>
+      <view class='content-bottom'>
+        <text class='content-bottom-left'>可以分享给好友、群</text>
+        <view class='content-bottom-right'>
+          <button class='content-btn' open-type='share'>分享给好友</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='pg-bt'>
+    <view class='pg-bt-content'>
+      <view class='pg-bt-content-top'>
+        奖励规则
+      </view>
+      <view class='pg-bt-content-center'>
+        <view wx:for="{{ruleList}}">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

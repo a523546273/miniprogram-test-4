@@ -16,7 +16,8 @@ Page({
         wc: 0,
         total: 1,
         buttonText: "去邀请",
-        disabled: false
+        disabled: false,
+        bindtap: 'invite'
       },
       {
         icon: "/images/task-2.png",
@@ -24,9 +25,10 @@ Page({
         reward: "奖励10次",
         tip: "输入你好友的邀请码，可以获得奖励",
         wc: 0,
-        total: 1,
-        buttonText: "完成",
-        disabled: false
+        total: '不限',
+        buttonText: "去完成",
+        disabled: false,
+        bindtap: 'validate'
       },
       {
         icon: "/images/task-3.png",
@@ -34,7 +36,7 @@ Page({
         reward: "奖励2次",
         tip: "每日签到获得2次奖励",
         wc: 0,
-        total: 1,
+        total: '1',
         buttonText: "签到",
         bindtap: 'attendance',
         disabled: false
@@ -58,7 +60,7 @@ Page({
         tip: "搜索关注公众号",
         wc: 0,
         total: 1,
-        buttonText: "去分享",
+        buttonText: "去关注",
         disabled: false
       }
     ]
@@ -102,6 +104,16 @@ Page({
       })
     })
   },
+  invite(e) {
+    wx.navigateTo({
+      url: '/pages/invite/invite'
+    })
+  },
+  validate(e) {
+    wx.navigateTo({
+      url: '/pages/validate/validate'
+    })
+  },
   /**
    * 用户签到
    */
@@ -137,12 +149,21 @@ Page({
     }
   },
   onShareAppMessage: function(res) {
-    var that=this;
+    var that = this;
     let openid = app.globalData.openid;
     if (res.from === 'button') {
 
     }
-   
+    return {
+      title: '短视频下载工具', //分享内容
+      path: '/pages/start/start', //分享地址
+      imageUrl: '/images/invite_bg_1.png', //分享图片
+      success: function(res) {
+        console.log(res)
+
+      }
+    }
+
   }
 
 

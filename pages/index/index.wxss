@@ -2,13 +2,11 @@
 
 swiper {
   width: 100%;
-  height: 390rpx;
 }
 
 swiper image.slide-image {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 .input {
@@ -18,7 +16,7 @@ swiper image.slide-image {
 
 .inputView {
   /*边界：大小1px, 为固体，为绿色*/
-  border: 1px solid green;
+  border: 1px solid rgb(26, 173, 25);
   /*边界角的弧度*/
   border-radius: 30px;
   margin-left: 15px;

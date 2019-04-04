@@ -27,6 +27,7 @@ App({
             that.globalData.session_key = res.data.session_key;
             that.globalData.subscribe = res.data.subscribe;
             that.globalData.count = res.data.count;
+            that.globalData.inviteCode = res.data.inviteCode;
 
 
           });
@@ -77,12 +78,15 @@ App({
     session_key: "",
     subscribe: 0,
     count: 0,
+    inviteCode: "",
     login: "login/wxLogin",
     parseUrl: "down/download",
     downSucccessUrl: "down/downSuccess",
     saveAdviceUrl: "advice/insert",
     attendanceUrl: "attendance/insert",
-    taskCompleteUrl: "/down/task"
+    taskCompleteUrl: "/down/task",
+    validateUrl: "/down/validate",
+    
   }
 
 

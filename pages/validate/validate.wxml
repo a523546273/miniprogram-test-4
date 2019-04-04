@@ -1,0 +1,15 @@
+<!--pages/validate/validate.wxml-->
+<view class="page-body">
+  <text>请输入您的好友邀请码</text>
+  <view>
+    <!--这个是输入框背景-->
+    <view class="inputView">
+      <!--这个是输入框-->
+      <input class="input" type="text"  value='{{inviteCode}}' placeholder-style="color: #dbdbdb" bindinput="listenerInput" />
+    </view>
+    <!--登录按钮-->
+    <view class='sure'>
+    <button class='sure-button' type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">确认</button>
+    </view>
+  </view>
+</view>

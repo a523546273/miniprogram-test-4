@@ -1,7 +1,5 @@
 
-.navigator-hover {
-  color: blue;
-}
+
 .hd_img{
   vertical-align: middle;width:20px; height: 20px;
 }
@@ -13,7 +11,7 @@
   height: 250rpx;
   background-color: #2D2D2D;
    font-size: 30rpx;
-  color: white;
+  color:rgb(255, 255, 255) ;
 }
 .userinfo {
   flex-direction: column;
@@ -51,5 +49,9 @@ margin-left: 150rpx;
   margin-right: 150rpx;
 }
 .content-button-number{
-  color: yellow;
+  color: rgb(255, 218, 97);
+}
+.weui-cell__ft_in-access{
+  font-size: 25rpx;
+  color: rgb(255, 218, 97);
 }
