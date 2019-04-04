@@ -1,0 +1,26 @@
+
+<view class="page-body">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!--这个是输入框背景-->
+  <view class="inputView">
+    <!--这个是输入框-->
+    <input class="input"  type="text" value='{{url}}' placeholder="请输入链接地址" placeholder-style="color: #dbdbdb" bindinput="listenerInput" />
+  </view>
+
+<!--登录按钮-->
+<button class='parse-btn'  type="primary" 
+ open-type="getUserInfo" bindgetuserinfo="getUserInfo"
+>解析</button>
+
+<view class='footer' hidden="{{isHidden}}">
+<button class='footer-btn1'  type="primary" bindtap="doSave">保存</button>
+<button class='footer-btn2'  type="primary" bindtap="qingkong">清空</button>
+</view>
+</view>

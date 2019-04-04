@@ -1,0 +1,144 @@
+page {
+  background-color: #f8f8f8;
+  height: 100%;
+  line-height: 1.6;
+  font-size: 26rpx;
+}
+
+.page-body {
+  padding-top: 30rpx;
+}
+
+.placeholderStyle {
+  color: #dbdbdb;
+}
+
+textarea {
+  width: 700rpx;
+  height: 150rpx;
+  padding: 25rpx 0;
+}
+
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.camera-content {
+  padding: 0 25rpx;
+  background-color: #fff;
+  height: 140rpx;
+}
+
+.camera-boder {
+  width: 100rpx;
+  height: 100rpx;
+  border: 1px solid #bfbfbf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-left {
+  width: 16%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.camera-center {
+  height: 100%;
+  width: 74%;
+  float: left;
+}
+
+.camera {
+  float: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rpx;
+}
+
+.photo-boder {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.camera-boder .camera-boder-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.camera-boder .camera-boder-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.camera-center-tip {
+  height: 100%;
+  width: 70%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.photo-tip {
+  color: #dbdbdb;
+  text-align: center;
+  float: left;
+}
+
+.camera-right {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.photo-num {
+  color: #dbdbdb;
+  float: right;
+}
+
+.section {
+  margin-top: 50rpx;
+  padding: 0 25rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.section input {
+  padding-left: 120rpx;
+  height: 80rpx;
+  width: 100%;
+}
+
+.section__title {
+  position: absolute;
+}
+
+.bd {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sumbit-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #69c3aa;
+  color: #fff;
+  text-align: center;
+  border-radius: 100rpx;
+  width: 350rpx;
+  margin-top: 50rpx;
+}
+
+.sumbit-btn:active {
+  opacity: 0.8;
+}

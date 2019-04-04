@@ -1,0 +1,55 @@
+
+.navigator-hover {
+  color: blue;
+}
+.hd_img{
+  vertical-align: middle;width:20px; height: 20px;
+}
+.hd_text{
+  padding-left: 20rpx;
+}
+.content{
+  width: 100%;
+  height: 250rpx;
+  background-color: #2D2D2D;
+   font-size: 30rpx;
+  color: white;
+}
+.userinfo {
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  float: left;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-left: 20rpx;
+  margin-top:55rpx;
+  float: left;
+
+ 
+}
+.content-button{
+  width: 100%;
+  clear: both;
+ padding-top: 40rpx;
+
+}
+.content-button-left{
+float: left;
+margin-left: 150rpx;
+}
+.content-button-right{
+  float: right;
+  margin-right: 150rpx;
+}
+.content-button-number{
+  color: yellow;
+}

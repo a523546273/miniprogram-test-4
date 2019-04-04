@@ -1,0 +1,51 @@
+/**index.wxss**/
+
+swiper {
+  width: 100%;
+  height: 390rpx;
+}
+
+swiper image.slide-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  padding-left: 10px;
+  height: 44px;
+}
+
+.inputView {
+  /*边界：大小1px, 为固体，为绿色*/
+  border: 1px solid green;
+  /*边界角的弧度*/
+  border-radius: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.parse-btn {
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 40rpx;
+  border-radius: 40rpx;
+}
+.footer{
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
+.footer-btn1{
+  width:30%;
+  background-color: #FFCC00;
+  display: inline-block;
+}
+
+.footer-btn2{
+   width:30%;
+   margin-left: 220rpx;
+  display: inline-block;
+}

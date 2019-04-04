@@ -1,0 +1,29 @@
+<view class="content" wx:for="{{taskList}}" wx:key="item">
+  <view class='content-left'>
+    <image src="{{item.icon}}" style=""></image>
+  </view>
+
+  <view class='content-right'>
+    <view class='content-right-top'>
+      <view class="weui-cell__bd">{{item.operation}}</view>
+      <view class="weui-cell__ft">{{item.reward}}</view>
+    </view>
+
+    <view class='content-right-center'>
+      <view class="weui-cell__bd">{{item.tip}}</view>
+    </view>
+
+    <view class='content-right-bottom'>
+      <text class='tasknum'>{{item.wc}}/{{item.total}}</text>
+
+      <button class='sumbit-btn' wx:if="{{item.openType=='share'}}" open-type="share" disabled='{{item.disabled}}' form-type="primary">{{item.buttonText}}</button>
+
+      <button class='sumbit-btn' disabled='{{item.disabled}}' wx:else="{{item.openType==share}}" open-type="getUserInfo" bindgetuserinfo="{{item.bindtap}}" form-type="primary">{{item.buttonText}}</button>
+    </view>
+
+
+  </view>
+
+
+
+</view>
